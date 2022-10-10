@@ -1,18 +1,10 @@
-import type { NextPage } from "next";
-import Head from "next/head";
+import { gitHubOAuth } from "@divops/github-oauth";
+import { GetServerSideProps } from "next";
 
-const Home: NextPage = () => {
-  return (
-    <div>
-      <Head>
-        <title>Hello world!</title>
-      </Head>
-
-      <main>
-        <h1>hello world!</h1>
-      </main>
-    </div>
-  );
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  return gitHubOAuth.redirectToGitHubAuthPage(context.req, context.res);
 };
 
-export default Home;
+export default () => {
+  return <></>;
+};
