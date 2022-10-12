@@ -1,6 +1,6 @@
+import axios from "axios";
 import type { NextPage } from "next";
 import Head from "next/head";
-import axios from "axios";
 import { useRouter } from "next/router";
 
 const Home: NextPage = () => {
@@ -10,8 +10,8 @@ const Home: NextPage = () => {
     try {
       const { data } = await axios("api/user");
       console.log(data);
-    } catch (error: any) {
-      if (error.message.includes("401")) {
+    } catch (error: unknown) {
+      if ((error as { message: string }).message.includes("401")) {
         router.push("./");
       }
     }

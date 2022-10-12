@@ -5,6 +5,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   return gitHubOAuth.redirectToGitHubAuthPage(context.req, context.res);
 };
 
-export default () => {
+export default function IndexPage() {
   return <></>;
-};
+}

@@ -1,8 +1,11 @@
 import { gitHubOAuth } from "@divops/github-oauth";
-import type { NextApiRequest, NextApiResponse } from "next";
 import axios from "axios";
+import type { NextApiRequest, NextApiResponse } from "next";
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default async function UserApi(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   const githubOauth = await gitHubOAuth.findGitHubToken(req);
 
   if (!githubOauth) {
@@ -18,7 +21,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     });
 
     return res.json({ data });
-  } catch (error: any) {
+  } catch {
     return res.status(401).json({ message: "Unauthorized" });
   }
-};
+}
