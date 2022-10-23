@@ -29,17 +29,17 @@ export default function IndexPage({ message }: { message: string }) {
   return <>{message}</>;
 }
 
-function getReferer(host?: string) {
-  if (host == null || host.trim() === "") {
-    return null;
-  }
+// function getReferer(host?: string) {
+//   if (host == null || host.trim() === "") {
+//     return null;
+//   }
 
-  switch (host) {
-    case "localhost:3000": {
-      return `http://${host}`;
-    }
-    default: {
-      return `https://${host}`;
-    }
-  }
-}
+//   switch (host) {
+//     case "localhost:3000": {
+//       return `http://${host}`;
+//     }
+//     default: {
+//       return `https://${host}`;
+//     }
+//   }
+// }
