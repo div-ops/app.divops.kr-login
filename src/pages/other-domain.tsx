@@ -5,14 +5,14 @@ import { GetServerSideProps } from "next";
 const DOMAIN = "https://app.divops.kr";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const { referer } = context.req?.headers || {};
+  const { referer } = context.req.headers;
 
   console.log("in /other-domain", "context.req?.headers", referer);
 
   if (referer == null) {
     return {
       props: {
-        message: `[500] context.req.headers.host is ${context.req.headers?.referer}`,
+        message: `[500] context.req.headers.host is ${referer}`,
       },
     };
   }
