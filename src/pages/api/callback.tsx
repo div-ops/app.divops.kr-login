@@ -10,26 +10,23 @@ export default async function CallbackApi(
   if (req.cookies?.["github-oauth"] != null) {
     res.setHeader(
       "debug-github-oauth",
-      `github-oauth=${req.cookies?.["github-oauth"]}; Path=/; HttpOnly; Secure; SameSite=None;`
+      `github-oauth=${req.cookies?.["github-oauth"]}; Path=/;`
     );
   }
 
   if (req.cookies?.["referer"] != null) {
     res.setHeader(
       "debug-referer",
-      `referer=${req.cookies?.["referer"]}; Path=/; HttpOnly; Secure; SameSite=None;`
+      `referer=${req.cookies?.["referer"]}; Path=/; `
     );
   }
 
   if (req.cookies?.["github-oauth"] != null) {
     res.setHeader(
       "Set-Cookie",
-      `github-oauth=${req.cookies?.["github-oauth"]}; Path=/; HttpOnly; Secure; SameSite=None;`
+      `github-oauth=${req.cookies?.["github-oauth"]}; Path=/;`
     );
-    res.setHeader(
-      "Set-Cookie",
-      `referer=${req.cookies?.["referer"]}; Path=/; HttpOnly; Secure; SameSite=None;`
-    );
+    res.setHeader("Set-Cookie", `referer=${req.cookies?.["referer"]}; Path=/;`);
   }
 
   return await gitHubOAuth.callback(req, res);
