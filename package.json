@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.19.1",
-    "@divops/github-oauth": "^0.0.23",
+    "@divops/github-oauth": "^0.0.24",
     "@emotion/react": "^11.10.4",
     "axios": "^0.27",
     "next": "12.3.1",
