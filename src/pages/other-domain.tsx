@@ -1,6 +1,7 @@
 import { GetServerSideProps } from "next";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
+  console.log(context.req.headers);
   return {
     redirect: {
       destination:
