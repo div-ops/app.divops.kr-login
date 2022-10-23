@@ -1,5 +1,7 @@
 import { GetServerSideProps } from "next";
 
+// const DOMAIN = "http://localhost:3000";
+
 const DOMAIN = "https://app.divops.kr";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
