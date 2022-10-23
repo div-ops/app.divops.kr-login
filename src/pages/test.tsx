@@ -24,7 +24,7 @@ const Home: NextPage = () => {
 
       <main>
         <h1>hello world!</h1>
-        <a href="./">로그인</a>
+        <a href="./other-domain">로그인</a>
         <a href="api/user">테스트</a>
         <button onClick={onClick}>API test</button>
       </main>
