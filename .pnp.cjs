@@ -40,7 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@babel/core", "npm:7.19.6"],\
             ["@divops/frontend-configs-cli", "workspace:shared/configs-cli"],\
-            ["@divops/github-oauth", "npm:0.0.15"],\
+            ["@divops/github-oauth", "npm:0.0.16"],\
             ["@emotion/babel-plugin", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:11.10.2"],\
             ["@emotion/react", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:11.10.4"],\
             ["@types/babel__core", "npm:7.1.19"],\
@@ -396,7 +396,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@divops/app.divops.kr-login", "workspace:."],\
             ["@babel/core", "npm:7.19.6"],\
             ["@divops/frontend-configs-cli", "workspace:shared/configs-cli"],\
-            ["@divops/github-oauth", "npm:0.0.15"],\
+            ["@divops/github-oauth", "npm:0.0.16"],\
             ["@emotion/babel-plugin", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:11.10.2"],\
             ["@emotion/react", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:11.10.4"],\
             ["@types/babel__core", "npm:7.1.19"],\
@@ -431,10 +431,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@divops/github-oauth", [\
-        ["npm:0.0.15", {\
-          "packageLocation": "./.yarn/cache/@divops-github-oauth-npm-0.0.15-211e9730b7-e88ffef754.zip/node_modules/@divops/github-oauth/",\
+        ["npm:0.0.16", {\
+          "packageLocation": "./.yarn/cache/@divops-github-oauth-npm-0.0.16-377670474b-120927ffdc.zip/node_modules/@divops/github-oauth/",\
           "packageDependencies": [\
-            ["@divops/github-oauth", "npm:0.0.15"],\
+            ["@divops/github-oauth", "npm:0.0.16"],\
             ["axios", "npm:0.27.2"]\
           ],\
           "linkType": "HARD"\
