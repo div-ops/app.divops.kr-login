@@ -7,6 +7,15 @@ export default async function CallbackApi(
 ) {
   console.log(req.headers);
   console.log(req.cookies);
+
+  const referer = req.cookies?.referer;
+
+  console.log(
+    "in https://app.divops.kr/callback",
+    "req.cookies?.referer",
+    referer
+  );
+
   if (req.cookies?.["github-oauth"] != null) {
     res.setHeader(
       "debug-github-oauth",
@@ -15,10 +24,7 @@ export default async function CallbackApi(
   }
 
   if (req.cookies?.["referer"] != null) {
-    res.setHeader(
-      "debug-referer",
-      `referer=${req.cookies?.["referer"]}; Path=/; `
-    );
+    res.setHeader("debug-referer", `referer=${referer}; Path=/; `);
   }
 
   if (req.cookies?.["github-oauth"] != null) {
@@ -26,7 +32,7 @@ export default async function CallbackApi(
       "Set-Cookie",
       `github-oauth=${req.cookies?.["github-oauth"]}; Path=/;`
     );
-    res.setHeader("Set-Cookie", `referer=${req.cookies?.["referer"]}; Path=/;`);
+    res.setHeader("Set-Cookie", `referer=${referer}; Path=/;`);
   }
 
   return await gitHubOAuth.callback(req, res);

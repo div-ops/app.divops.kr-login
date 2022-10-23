@@ -7,6 +7,8 @@ const DOMAIN = "https://app.divops.kr";
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { referer } = context.req?.headers || {};
 
+  console.log("in /other-domain", "context.req?.headers", referer);
+
   if (referer == null) {
     return {
       props: {
