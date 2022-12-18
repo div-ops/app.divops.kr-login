@@ -31,9 +31,29 @@ const Callback: NextPage = () => {
         }),
       });
 
-      const data = await response.json();
+      const Authorization = response.headers.get("Authorization");
 
-      console.log({ data });
+      const referrer = localStorage.get("referrer");
+
+      console.log({ Authorization, referrer });
+
+      if (!Authorization) {
+        alert("잘못된 접근인데, 어떻게 오셨어요? 다시 접근해보세용!");
+        setTimeout(() => {
+          window.history.back();
+        }, 3000);
+        return;
+      }
+
+      if (referrer.include("?")) {
+        window.location.assign(
+          `${referrer}${`&code=${encodeURIComponent(Authorization)}`}`
+        );
+      } else {
+        window.location.assign(
+          `${referrer}${`?code=${encodeURIComponent(Authorization)}`}`
+        );
+      }
     })();
   }, [router]);
 
