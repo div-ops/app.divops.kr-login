@@ -31,7 +31,7 @@ const Callback: NextPage = () => {
         }),
       });
 
-      const data = response.json();
+      const data = await response.json();
 
       console.log({ data });
     })();
