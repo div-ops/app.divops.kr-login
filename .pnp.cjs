@@ -56,6 +56,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-import", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:2.26.0"],\
             ["husky", "npm:8.0.2"],\
             ["next", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:12.3.1"],\
+            ["nextjs-cors", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:2.1.2"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=a1c5e5"]\
@@ -412,6 +413,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-import", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:2.26.0"],\
             ["husky", "npm:8.0.2"],\
             ["next", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:12.3.1"],\
+            ["nextjs-cors", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:2.1.2"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=a1c5e5"]\
@@ -1656,6 +1658,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/unplugged/core-js-pure-npm-3.26.1-d78c7431c6/node_modules/core-js-pure/",\
           "packageDependencies": [\
             ["core-js-pure", "npm:3.26.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["cors", [\
+        ["npm:2.8.5", {\
+          "packageLocation": "./.yarn/cache/cors-npm-2.8.5-c9935a2d12-ced838404c.zip/node_modules/cors/",\
+          "packageDependencies": [\
+            ["cors", "npm:2.8.5"],\
+            ["object-assign", "npm:4.1.1"],\
+            ["vary", "npm:1.1.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3416,6 +3429,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["nextjs-cors", [\
+        ["npm:2.1.2", {\
+          "packageLocation": "./.yarn/cache/nextjs-cors-npm-2.1.2-a0df7e5245-92417b4367.zip/node_modules/nextjs-cors/",\
+          "packageDependencies": [\
+            ["nextjs-cors", "npm:2.1.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:2.1.2", {\
+          "packageLocation": "./.yarn/__virtual__/nextjs-cors-virtual-cdf986e380/0/cache/nextjs-cors-npm-2.1.2-a0df7e5245-92417b4367.zip/node_modules/nextjs-cors/",\
+          "packageDependencies": [\
+            ["nextjs-cors", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:2.1.2"],\
+            ["@types/next", null],\
+            ["cors", "npm:2.8.5"],\
+            ["next", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:12.3.1"]\
+          ],\
+          "packagePeers": [\
+            "@types/next",\
+            "next"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["node-releases", [\
         ["npm:2.0.8", {\
           "packageLocation": "./.yarn/cache/node-releases-npm-2.0.8-1733e5f247-b1ab02c0d5.zip/node_modules/node-releases/",\
@@ -4293,6 +4329,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@types/react",\
             "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["vary", [\
+        ["npm:1.1.2", {\
+          "packageLocation": "./.yarn/cache/vary-npm-1.1.2-b49f70ae63-ae0123222c.zip/node_modules/vary/",\
+          "packageDependencies": [\
+            ["vary", "npm:1.1.2"]\
           ],\
           "linkType": "HARD"\
         }]\
