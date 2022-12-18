@@ -6,10 +6,9 @@ export default async function SetToken(
   res: NextApiResponse
 ) {
   await NextCors(req, res, {
-    // Options
     methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
     origin: ["https://www.creco.services", "http://localhost:3000"],
-    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+    optionsSuccessStatus: 200,
   });
 
   const code = req.body?.code;
