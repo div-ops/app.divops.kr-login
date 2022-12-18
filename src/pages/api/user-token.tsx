@@ -23,7 +23,9 @@ export default async function UserTokenAPI(
 
   res.setHeader("Authorization", `Bearer ${encodeToken(accessToken)}`);
 
-  return res.end(decodeToken(encodeToken(accessToken)) === accessToken);
+  return res.json({
+    status: decodeToken(encodeToken(accessToken)) === accessToken,
+  });
 }
 
 const algorithm = "aes-256-cbc";
