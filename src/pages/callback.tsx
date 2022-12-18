@@ -1,10 +1,6 @@
-import axios from "axios";
 import type { NextPage } from "next";
-import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-
-const CLIENT_ID = "0a82fd2fc4d4d7e7162d";
 
 const Callback: NextPage = () => {
   const router = useRouter();
