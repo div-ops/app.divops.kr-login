@@ -33,11 +33,11 @@ const Callback: NextPage = () => {
 
       const Authorization = response.headers.get("Authorization");
 
-      const referrer = localStorage.get("referrer");
+      const referrer = localStorage.getItem("referrer");
 
       console.log({ Authorization, referrer });
 
-      if (!Authorization) {
+      if (!Authorization || !referrer) {
         alert("잘못된 접근인데, 어떻게 오셨어요? 다시 접근해보세용!");
         setTimeout(() => {
           window.history.back();
@@ -45,7 +45,7 @@ const Callback: NextPage = () => {
         return;
       }
 
-      if (referrer.include("?")) {
+      if (referrer.includes("?")) {
         window.location.assign(
           `${referrer}${`&code=${encodeURIComponent(Authorization)}`}`
         );
