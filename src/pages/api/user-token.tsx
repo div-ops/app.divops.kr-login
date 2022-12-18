@@ -6,12 +6,6 @@ export default async function UserTokenAPI(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  console.log({
-    client_id: process.env.GITHUB_CLIENT_ID,
-    client_secret: process.env.GITHUB_CLIENT_SECRET,
-    code: req.query.code,
-  });
-
   const { data } = await axios({
     method: "post",
     url: `https://github.com/login/oauth/access_token`,
@@ -21,13 +15,12 @@ export default async function UserTokenAPI(
     data: {
       client_id: process.env.GITHUB_CLIENT_ID,
       client_secret: process.env.GITHUB_CLIENT_SECRET,
-      code: req.query.code,
+      code: req.body.code,
     },
   });
 
   const { access_token: accessToken } = data;
 
-  console.log({ accessToken });
   res.setHeader("Authorization", `Bearer ${encodeToken(accessToken)}`);
 
   return res.json({
