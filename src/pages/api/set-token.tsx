@@ -11,7 +11,11 @@ export default async function SetToken(
     optionsSuccessStatus: 200,
   });
 
-  const code = req.body?.code;
+  const code = req.headers?.["authorization"];
+
+  if (code == null) {
+    return res.status(400).json({ message: "권한이 없습니다." });
+  }
 
   const decoded = decodeURIComponent(code);
   const [, token] = decoded.split(" ");
