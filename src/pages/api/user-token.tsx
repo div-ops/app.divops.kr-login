@@ -21,6 +21,7 @@ export default async function UserTokenAPI(
     },
   });
 
+  console.log({ accessToken });
   res.setHeader("Authorization", `Bearer ${encodeToken(accessToken)}`);
 
   return res.json({
