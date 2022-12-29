@@ -1,7 +1,9 @@
-import { gitHubOAuth } from "@divops/github-oauth";
+import { createGitHubOAuth } from "@divops/github-oauth";
 import { GetServerSideProps } from "next";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
+  const gitHubOAuth = await createGitHubOAuth({ name: "app-divops-kr" });
+
   const { referer } = context.query;
 
   console.log(

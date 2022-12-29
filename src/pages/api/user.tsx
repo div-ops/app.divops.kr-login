@@ -1,4 +1,4 @@
-import { gitHubOAuth } from "@divops/github-oauth";
+import { createGitHubOAuth } from "@divops/github-oauth";
 import axios from "axios";
 import type { NextApiRequest, NextApiResponse } from "next";
 
@@ -6,6 +6,7 @@ export default async function UserApi(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  const gitHubOAuth = await createGitHubOAuth({ name: "app-divops-kr" });
   const githubOauth = await gitHubOAuth.findGitHubToken(req);
 
   if (!githubOauth) {

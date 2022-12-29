@@ -1,10 +1,11 @@
-import { gitHubOAuth } from "@divops/github-oauth";
+import { createGitHubOAuth } from "@divops/github-oauth";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 export default async function CallbackApi(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  const gitHubOAuth = await createGitHubOAuth({ name: "app-divops-kr" });
   console.log(req.headers);
   console.log(req.cookies);
 

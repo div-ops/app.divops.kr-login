@@ -1,29 +1,15 @@
-import axios from "axios";
 import type { NextApiRequest, NextApiResponse } from "next";
-import { encodeToken, decodeToken } from "../../utils/auth";
+import { createGitHubOAuth } from "@divops/github-oauth";
 
 export default async function UserTokenAPI(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const { data } = await axios({
-    method: "post",
-    url: `https://github.com/login/oauth/access_token`,
-    headers: {
-      accept: "application/json",
-    },
-    data: {
-      client_id: process.env.GITHUB_CLIENT_ID,
-      client_secret: process.env.GITHUB_CLIENT_SECRET,
-      code: req.body.code,
-    },
-  });
+  const gitHubOAuth = await createGitHubOAuth({ name: "app-divops-kr" });
 
-  const { access_token: accessToken } = data;
+  const authorization = await gitHubOAuth.loginOauthAccessToken(req.body.code);
 
-  res.setHeader("Authorization", `Bearer ${encodeToken(accessToken)}`);
+  res.setHeader("Authorization", `Bearer ${authorization}`);
 
-  return res.json({
-    status: decodeToken(encodeToken(accessToken)) === accessToken,
-  });
+  return res.json({ status: true });
 }
