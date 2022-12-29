@@ -41,7 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.20.7"],\
             ["@divops/frontend-configs-cli", "workspace:shared/configs-cli"],\
             ["@divops/gist-storage", "npm:0.0.7"],\
-            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.30"],\
+            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.31"],\
             ["@emotion/babel-plugin", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:11.10.5"],\
             ["@emotion/react", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:11.10.5"],\
             ["@types/babel__core", "npm:7.1.20"],\
@@ -400,7 +400,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.20.7"],\
             ["@divops/frontend-configs-cli", "workspace:shared/configs-cli"],\
             ["@divops/gist-storage", "npm:0.0.7"],\
-            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.30"],\
+            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.31"],\
             ["@emotion/babel-plugin", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:11.10.5"],\
             ["@emotion/react", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:11.10.5"],\
             ["@types/babel__core", "npm:7.1.20"],\
@@ -446,19 +446,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@divops/github-oauth", [\
-        ["npm:0.0.30", {\
-          "packageLocation": "./.yarn/cache/@divops-github-oauth-npm-0.0.30-9607135a76-f87d978851.zip/node_modules/@divops/github-oauth/",\
+        ["npm:0.0.31", {\
+          "packageLocation": "./.yarn/cache/@divops-github-oauth-npm-0.0.31-86922f45ca-34cb886b26.zip/node_modules/@divops/github-oauth/",\
           "packageDependencies": [\
-            ["@divops/github-oauth", "npm:0.0.30"]\
+            ["@divops/github-oauth", "npm:0.0.31"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.30", {\
-          "packageLocation": "./.yarn/__virtual__/@divops-github-oauth-virtual-f52508b525/0/cache/@divops-github-oauth-npm-0.0.30-9607135a76-f87d978851.zip/node_modules/@divops/github-oauth/",\
+        ["virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.31", {\
+          "packageLocation": "./.yarn/__virtual__/@divops-github-oauth-virtual-3a3fa79571/0/cache/@divops-github-oauth-npm-0.0.31-86922f45ca-34cb886b26.zip/node_modules/@divops/github-oauth/",\
           "packageDependencies": [\
-            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.30"],\
+            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.31"],\
             ["@divops/gist-storage", "npm:0.0.7"],\
-            ["@divops/simple-crypto", "npm:0.0.1"],\
+            ["@divops/simple-crypto", "npm:0.0.2"],\
             ["@types/divops__gist-storage", null],\
             ["axios", "npm:0.27.2"]\
           ],\
@@ -470,10 +470,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@divops/simple-crypto", [\
-        ["npm:0.0.1", {\
-          "packageLocation": "./.yarn/cache/@divops-simple-crypto-npm-0.0.1-e5f15ec393-039a16b7c4.zip/node_modules/@divops/simple-crypto/",\
+        ["npm:0.0.2", {\
+          "packageLocation": "./.yarn/cache/@divops-simple-crypto-npm-0.0.2-14f6a62f4c-56a497a0f4.zip/node_modules/@divops/simple-crypto/",\
           "packageDependencies": [\
-            ["@divops/simple-crypto", "npm:0.0.1"]\
+            ["@divops/simple-crypto", "npm:0.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
