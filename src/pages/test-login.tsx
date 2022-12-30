@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import { beforeAuthorization } from "@divops/github-oauth";
 
 const CLIENT_ID = "0a82fd2fc4d4d7e7162d";
 
@@ -22,11 +23,7 @@ const TestLogin: NextPage = () => {
       return;
     }
 
-    localStorage.setItem("referrer", referrer);
-
-    window.location.assign(
-      `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}`
-    );
+    beforeAuthorization({ CLIENT_ID, referrer });
   }, [router]);
 
   return <></>;

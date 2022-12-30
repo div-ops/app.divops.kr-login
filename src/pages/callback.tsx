@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import { afterAuthorization } from "@divops/github-oauth";
 
 const Callback: NextPage = () => {
   const router = useRouter();
@@ -20,41 +21,7 @@ const Callback: NextPage = () => {
       return;
     }
 
-    (async () => {
-      const response = await fetch("/login/api/user-token", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          code: code,
-        }),
-      });
-
-      const Authorization = response.headers.get("Authorization");
-
-      const referrer = localStorage.getItem("referrer");
-
-      console.log({ Authorization, referrer });
-
-      if (!Authorization || !referrer) {
-        alert("잘못된 접근인데, 어떻게 오셨어요? 다시 접근해보세용!");
-        setTimeout(() => {
-          window.history.back();
-        }, 3000);
-        return;
-      }
-
-      if (referrer.includes("?")) {
-        window.location.assign(
-          `${referrer}${`&code=${encodeURIComponent(Authorization)}`}`
-        );
-      } else {
-        window.location.assign(
-          `${referrer}${`?code=${encodeURIComponent(Authorization)}`}`
-        );
-      }
-    })();
+    afterAuthorization({ code });
   }, [router]);
 
   return <></>;
