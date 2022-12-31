@@ -41,7 +41,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.20.7"],\
             ["@divops/frontend-configs-cli", "workspace:shared/configs-cli"],\
             ["@divops/gist-storage", "npm:0.0.7"],\
-            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.36"],\
+            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.37"],\
+            ["@divops/github-oauth-sdk", "npm:0.0.1"],\
             ["@emotion/babel-plugin", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:11.10.5"],\
             ["@emotion/react", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:11.10.5"],\
             ["@types/babel__core", "npm:7.1.20"],\
@@ -400,7 +401,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.20.7"],\
             ["@divops/frontend-configs-cli", "workspace:shared/configs-cli"],\
             ["@divops/gist-storage", "npm:0.0.7"],\
-            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.36"],\
+            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.37"],\
+            ["@divops/github-oauth-sdk", "npm:0.0.1"],\
             ["@emotion/babel-plugin", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:11.10.5"],\
             ["@emotion/react", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:11.10.5"],\
             ["@types/babel__core", "npm:7.1.20"],\
@@ -446,17 +448,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@divops/github-oauth", [\
-        ["npm:0.0.36", {\
-          "packageLocation": "./.yarn/cache/@divops-github-oauth-npm-0.0.36-7026598664-f41df4b30b.zip/node_modules/@divops/github-oauth/",\
+        ["npm:0.0.37", {\
+          "packageLocation": "./.yarn/cache/@divops-github-oauth-npm-0.0.37-0d1f55a588-27ff6ac769.zip/node_modules/@divops/github-oauth/",\
           "packageDependencies": [\
-            ["@divops/github-oauth", "npm:0.0.36"]\
+            ["@divops/github-oauth", "npm:0.0.37"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.36", {\
-          "packageLocation": "./.yarn/__virtual__/@divops-github-oauth-virtual-bb94e7730f/0/cache/@divops-github-oauth-npm-0.0.36-7026598664-f41df4b30b.zip/node_modules/@divops/github-oauth/",\
+        ["virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.37", {\
+          "packageLocation": "./.yarn/__virtual__/@divops-github-oauth-virtual-e47e663fe2/0/cache/@divops-github-oauth-npm-0.0.37-0d1f55a588-27ff6ac769.zip/node_modules/@divops/github-oauth/",\
           "packageDependencies": [\
-            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.36"],\
+            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.37"],\
             ["@divops/gist-storage", "npm:0.0.7"],\
             ["@divops/simple-crypto", "npm:0.0.2"],\
             ["@types/divops__gist-storage", null],\
@@ -465,6 +467,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@divops/gist-storage",\
             "@types/divops__gist-storage"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@divops/github-oauth-sdk", [\
+        ["npm:0.0.1", {\
+          "packageLocation": "./.yarn/cache/@divops-github-oauth-sdk-npm-0.0.1-4488dca2b3-eb4aa6de93.zip/node_modules/@divops/github-oauth-sdk/",\
+          "packageDependencies": [\
+            ["@divops/github-oauth-sdk", "npm:0.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -651,10 +662,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@eslint/eslintrc", [\
-        ["npm:1.4.0", {\
-          "packageLocation": "./.yarn/cache/@eslint-eslintrc-npm-1.4.0-f3a03b15bc-73e39c833d.zip/node_modules/@eslint/eslintrc/",\
+        ["npm:1.4.1", {\
+          "packageLocation": "./.yarn/cache/@eslint-eslintrc-npm-1.4.1-007f670de2-cd3e5a8683.zip/node_modules/@eslint/eslintrc/",\
           "packageDependencies": [\
-            ["@eslint/eslintrc", "npm:1.4.0"],\
+            ["@eslint/eslintrc", "npm:1.4.1"],\
             ["ajv", "npm:6.12.6"],\
             ["debug", "virtual:13e8211fef7d70350208644f0998d53969a81b86246fda7d97d7fa9b9d174e45548bc528c8768f08c02096f917b2dd6a8e4dcec6187e472dfaf96e40b05be272#npm:4.3.4"],\
             ["espree", "npm:9.4.1"],\
@@ -2185,7 +2196,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/eslint-npm-8.23.1-bc9a4812f6-a727e15492.zip/node_modules/eslint/",\
           "packageDependencies": [\
             ["eslint", "npm:8.23.1"],\
-            ["@eslint/eslintrc", "npm:1.4.0"],\
+            ["@eslint/eslintrc", "npm:1.4.1"],\
             ["@humanwhocodes/config-array", "npm:0.10.7"],\
             ["@humanwhocodes/gitignore-to-minimatch", "npm:1.0.2"],\
             ["@humanwhocodes/module-importer", "npm:1.0.1"],\
