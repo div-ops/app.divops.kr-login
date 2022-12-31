@@ -1,3 +1,3 @@
-import { createAPIHandlerUserToken } from "@divops/github-oauth";
+import { API } from "@divops/github-oauth";
 
-export default createAPIHandlerUserToken({ name: "app-divops-kr" });
+export default API.of({ name: "app-divops-kr" }).UserToken();
