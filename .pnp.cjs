@@ -41,7 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.20.7"],\
             ["@divops/frontend-configs-cli", "workspace:shared/configs-cli"],\
             ["@divops/gist-storage", "npm:0.0.7"],\
-            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.37"],\
+            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.41"],\
             ["@divops/github-oauth-sdk", "npm:0.0.1"],\
             ["@emotion/babel-plugin", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:11.10.5"],\
             ["@emotion/react", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:11.10.5"],\
@@ -401,7 +401,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.20.7"],\
             ["@divops/frontend-configs-cli", "workspace:shared/configs-cli"],\
             ["@divops/gist-storage", "npm:0.0.7"],\
-            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.37"],\
+            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.41"],\
             ["@divops/github-oauth-sdk", "npm:0.0.1"],\
             ["@emotion/babel-plugin", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:11.10.5"],\
             ["@emotion/react", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:11.10.5"],\
@@ -448,17 +448,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@divops/github-oauth", [\
-        ["npm:0.0.37", {\
-          "packageLocation": "./.yarn/cache/@divops-github-oauth-npm-0.0.37-0d1f55a588-27ff6ac769.zip/node_modules/@divops/github-oauth/",\
+        ["npm:0.0.41", {\
+          "packageLocation": "./.yarn/cache/@divops-github-oauth-npm-0.0.41-0e37e80405-e183babe06.zip/node_modules/@divops/github-oauth/",\
           "packageDependencies": [\
-            ["@divops/github-oauth", "npm:0.0.37"]\
+            ["@divops/github-oauth", "npm:0.0.41"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.37", {\
-          "packageLocation": "./.yarn/__virtual__/@divops-github-oauth-virtual-e47e663fe2/0/cache/@divops-github-oauth-npm-0.0.37-0d1f55a588-27ff6ac769.zip/node_modules/@divops/github-oauth/",\
+        ["virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.41", {\
+          "packageLocation": "./.yarn/__virtual__/@divops-github-oauth-virtual-14daaf57fc/0/cache/@divops-github-oauth-npm-0.0.41-0e37e80405-e183babe06.zip/node_modules/@divops/github-oauth/",\
           "packageDependencies": [\
-            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.37"],\
+            ["@divops/github-oauth", "virtual:65ecfd44dbac77bfc94480014c3ebe241194fa3810d57072fd35dd8d431b7d0063cc69266ba33e53c210d40dbacff3d665fca41202b50bbdd523cba71f3a5f8c#npm:0.0.41"],\
             ["@divops/gist-storage", "npm:0.0.7"],\
             ["@divops/simple-crypto", "npm:0.0.2"],\
             ["@types/divops__gist-storage", null],\
