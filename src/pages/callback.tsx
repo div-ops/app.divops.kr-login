@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { onCompleteGitHubOAuth } from "@divops/github-oauth";
+import { onCompleteGitHubOAuth } from "@divops/github-oauth-sdk";
 
 const Callback: NextPage = () => {
   const router = useRouter();
@@ -21,7 +21,7 @@ const Callback: NextPage = () => {
       return;
     }
 
-    onCompleteGitHubOAuth({ code });
+    onCompleteGitHubOAuth({ url: "/login/api/user-token", code });
   }, [router]);
 
   return <></>;

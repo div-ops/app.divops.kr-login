@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { requestGitHubOAuth } from "@divops/github-oauth";
+import { requestGitHubOAuth } from "@divops/github-oauth-sdk";
 
 const CLIENT_ID = "0a82fd2fc4d4d7e7162d";
 
